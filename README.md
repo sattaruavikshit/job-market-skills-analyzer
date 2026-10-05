@@ -26,6 +26,13 @@ python3 -m unittest discover -s tests -v
 
 Default file paths are relative to the project directory, so the script also works when called from another directory. Explicit `--csv` and `--db` paths are relative to your current working directory. Each run replaces the database's imported dataset; it does not append jobs. Validation happens before replacement, and database errors roll back the import.
 
+## Interactive demo
+
+Open [demo.html](demo.html) in a web browser to explore skill counts, locations,
+matching postings, and the SQL query for a selected skill. The demo contains the
+same five fictional sample jobs as a static snapshot; it does not run Python or
+read your SQLite database. Custom CSV imports do not update the demo.
+
 ## Data format
 
 Use this exact header. Quote the skills field because it contains commas:
